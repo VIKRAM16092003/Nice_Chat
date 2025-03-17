@@ -19,7 +19,12 @@ app.use(cors({
     credentials:true,
 }));
 const PORT=process.env.PORT;
-
+// Run garbage collection manually
+if (global.gc) {
+    setInterval(() => {
+      global.gc();
+    }, 60000); // Runs every 60 seconds
+  }
 const __dirname=path.resolve();
 app.use("/api/auth",authRoutes);
 app.use("/api/messages",MessageRoutes);
