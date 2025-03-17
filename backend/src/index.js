@@ -12,7 +12,7 @@ dotenv.config()
 // const app=express(); we need to create the express server app() in socket.io(utils)
 
 
-app.use(express.json({ limit: "3mb" }))
+app.use(express.json({ limit: "1mb" }))
 app.use(cookieParser());  //Extract Cookies: It reads the cookies from incoming HTTP requests and makes them accessible via req.cookies (for regular cookies) and req.signedCookies (for signed cookies)
 app.use(cors({
     origin:"http://localhost:5173",
