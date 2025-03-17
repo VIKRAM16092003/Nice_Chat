@@ -1,0 +1,39 @@
+=>intall node package npm init -y
+=>install these packages npm i express mongoose dotenv jsonwebtoken bcryptjs cookie-parser cloudinary socket.io 
+=>install the nodemon -D
+=>create index.js main file
+=>in package.json change some codes into
+
+
+=>run the express server in the index.js
+=>connect with mongodb in lib db.js
+=>use dotenv for environment variables
+=>create the models of database like user.model.js
+=>use this app.use() for create authRouthes like signup,login.logout
+=>import the cookie parser in the index.js
+=> first create the signup,login.logout in the auth.authRouthes
+=>do the proper codes for those conroller function and check in the postman
+=>in this process we use jwt token cookie so create lib utils.js
+=>same wise create the cloudinary.js in the lib for image upload that will be used in the upcomming updateprofile and sendmessage controllers
+=>then we need to create the middleware for protection of unauthorised user to  updateprofile,refresh,all controller operation in message.controller.js(this will get the cookies.jwt from the saved browser cookie and check the cookies are equal or not send the req.user to the next user for authorisation)
+then create model for the message.model.js
+create for index.js,routes,controllers,and do the controller operation...
+
+
+=>write a code a for the send message socket in message controller
+ 
+ISSUES faced => db connection =>
+
+Open Network Settings
+Press Win + R, type ncpa.cpl, and press Enter.
+Right-click on your active network (Wi-Fi or Ethernet) and select Properties.
+Change IPv4 DNS Settings
+
+Select Internet Protocol Version 4 (TCP/IPv4) and click Properties.
+Click Use the following DNS server addresses:
+Preferred DNS server: 8.8.8.8
+Alternate DNS server: 8.8.4.4
+Click OK and Close.
+
+
+

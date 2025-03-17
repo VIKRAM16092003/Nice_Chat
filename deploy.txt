@@ -1,0 +1,20 @@
+=> npm init -y
+=>then go to json package of the global json
+=>add "build","start"
+=>go to backend add "start":"node src.index.js"
+=>then create .gitignore in global and go to frontend folder .gitignore copy the code and paste it in the global gitignore and add .env and delete the frontend gitignore
+=>then type git init you will see the ignored files
+=>in the global json file "build":"npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"npm run start"
+=>if you delete the node modules package then run the npm run build cmd to install
+=>go to index.js and import path create resolve path
+const __dirname=path.resolve();
+if(process.env.NODE_ENV==="production")
+{
+    app.use(express.static(path.join(__dirname,"../frontend/dist")));
+    app.get("*",(req,res)=>
+    {
+        res.sendFile(path.join(__dirname,"../frontend","dist","index.html"));
+    })
+}
+=>change the local host serer

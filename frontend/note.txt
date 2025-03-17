@@ -1,0 +1,16 @@
+=>install react using npm create vite@latest .
+
+=>then remove all and remove unnecessory codes the css from the app.css and index.css
+=>install the tailwindcss 
+=>install the daisyui.css from the browser
+
+
+=>install the react-dom-router and react-hot-toast
+=>import the <BrowserRouter> in the main.jsx and create a routes in the app.jsx
+=>install the axios and zustand then create a folder lib in src and create file axios and create the object
+
+
+
+=> change------const res=await axiosInstanace.get("/auth/check",{headers:{ Authorization: `Bearer ${token}` }});
+
+
